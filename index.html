@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Articles</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        // Événement de vue de page
+        gtag('event', 'page_view', {
+            'page_path': '/',
+            'page_title': 'Articles'
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>TechStore</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="cart.html" class="cart-link">Panier <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- SLIDER PUBLICITAIRE SIMPLE -->
+        <section class="slider-promo" id="sliderPromo">
+            <div class="promo-content">
+                <span class="promo-text">🎉 Offre Spéciale : Jusqu'à 30% de réduction sur les smartphones !</span>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h2>Bienvenue dans notre boutique</h2>
+            <p>Découvrez nos produits technologiques de qualité</p>
+        </section>
+
+        <section class="filters">
+            <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+            <select id="categoryFilter">
+                <option value="">Toutes les catégories</option>
+                <option value="smartphone">Smartphones</option>
+                <option value="ordinateur">Ordinateurs</option>
+                <option value="accessoire">Accessoires</option>
+            </select>
+        </section>
+
+        <section class="products-grid" id="productsContainer">
+            <!-- Les produits seront chargés ici -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechStore. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

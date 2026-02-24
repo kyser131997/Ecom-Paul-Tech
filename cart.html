@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        // Événement de vue de page
+        gtag('event', 'page_view', {
+            'page_path': '/cart',
+            'page_title': 'Panier'
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>TechStore</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cart.html" class="active">Panier <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Mon Panier</h2>
+        
+        <section class="cart-section">
+            <div class="cart-items" id="cartItemsContainer">
+                <!-- Les articles du panier seront affichés ici -->
+            </div>
+
+            <aside class="cart-summary">
+                <h3>Résumé de la commande</h3>
+                <div class="summary-row">
+                    <span>Sous-total:</span>
+                    <span id="subtotal">0,00 €</span>
+                </div>
+                <div class="summary-row">
+                    <span>TVA (20%):</span>
+                    <span id="tax">0,00 €</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">0,00 €</span>
+                </div>
+                <button class="btn-checkout" id="checkoutBtn">Procéder au paiement</button>
+                <a href="index.html" class="btn-continue">Continuer les achats</a>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechStore. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

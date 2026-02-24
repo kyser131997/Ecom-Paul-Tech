@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail du produit - TechStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        // Événement de vue de page
+        gtag('event', 'page_view', {
+            'page_path': '/product-detail',
+            'page_title': 'Détail du produit'
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>TechStore</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cart.html" class="cart-link">Panier <span class="cart-count">0</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">&larr; Retour aux articles</a>
+        
+        <section class="product-detail" id="productDetailContainer">
+            <!-- Les détails du produit seront chargés ici -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechStore. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
